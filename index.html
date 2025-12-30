@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indraprastha | Online Store</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --primary:#1b5e20;
+    --secondary:#2e7d32;
+    --accent:#ff9800;
+    --light:#f5f5f5;
+    --dark:#222;
+    --radius:10px;
+    --shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+body{
+    background:#f1f3f6;
+    color:var(--dark);
+}
+
+/* HEADER */
+header{
+    background:white;
+    box-shadow:var(--shadow);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.header{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.logo i{
+    color:var(--accent);
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(27,94,32,0.85),rgba(46,125,50,0.85)),
+    url("https://images.unsplash.com/photo-1607082349566-187342175e2f");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:2.6rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.hero button{
+    margin-top:25px;
+    padding:12px 35px;
+    border:none;
+    background:var(--accent);
+    color:white;
+    font-size:1rem;
+    border-radius:var(--radius);
+    cursor:pointer;
+}
+
+/* PRODUCTS */
+.section{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+.section h2{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:40px;
+    color:var(--secondary);
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:var(--primary);
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.card-content button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:var(--secondary);
+    color:white;
+    border-radius:var(--radius);
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:var(--secondary);
+    color:white;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+.footer{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+footer h4{
+    margin-bottom:15px;
+}
+
+footer p,footer a{
+    color:#ddd;
+    font-size:0.95rem;
+    text-decoration:none;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:30px;
+    font-size:0.9rem;
+    color:#ccc;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-store"></i> Indraprastha
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Indraprastha Online Store</h1>
+    <p>A modern demo shopping website built using HTML, CSS and JavaScript for cloud deployment.</p>
+    <button>Explore Products</button>
+</section>
+
+<section class="section">
+    <h2>Our Products</h2>
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+            <div class="card-content">
+                <h3>Wireless Headphones</h3>
+                <p class="price">₹2,499</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+            <div class="card-content">
+                <h3>Smart Watch</h3>
+                <p class="price">₹4,999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62">
+            <div class="card-content">
+                <h3>Laptop Backpack</h3>
+                <p class="price">₹1,299</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
+        <div>
+            <h4>Indraprastha</h4>
+            <p>Demo e-commerce website created for academic cloud deployment.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <p>Home</p>
+            <p>Products</p>
+            <p>Contact</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: indraprastha@demo.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © 2025 Indraprastha. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
